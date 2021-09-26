@@ -3,18 +3,20 @@ version: '3.7'
 services:
   default:
     image: adrianrudnik/maintenance-server
+    container_name: maintenance-server_default
     restart: always
     ports:
-      - 8181:80
+      - 9000:80
     environment:
         SERVER_PORT: :80
     volumes:
       - ./pages/default.html:/app/index.html
   swissgamingclan:
     image: adrianrudnik/maintenance-server
+    container_name: maintenance-server_swissgamingclan
     restart: always
     ports:
-      - 8282:80
+      - 9001:80
     environment:
         SERVER_PORT: :80
     volumes:

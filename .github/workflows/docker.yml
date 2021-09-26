@@ -1,0 +1,18 @@
+name: Docker CI
+
+on: push
+
+jobs:  
+  build:
+    runs-on: self-hosted
+
+    steps:
+    - uses: actions/checkout@v1
+
+    - name: Build Docker container
+      run: | 
+        docker-compose up -d --force-recreate --remove-orphans
+
+    - name: Remove unused Docker images
+      run: | 
+        docker image prune --all --force
