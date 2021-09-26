@@ -1,5 +1,5 @@
-# Maintenance Page
+# Maintenance microservice / server
 
-This is my optimized maintenacne page from [github.com/adrianrudnik/maintenance-server](https://github.com/adrianrudnik/maintenance-server).
+Standalone server, serving static file based folder containing a default message that the site is under maintenance.
 
-I use it as a fallback site when I deploy something new and the pm2 node server is stopped.
+Copyright Adrian Rudnik  [github.com/adrianrudnik/maintenance-server](https://github.com/adrianrudnik/maintenance-server).
