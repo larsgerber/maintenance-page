@@ -1,3 +1,5 @@
+[![Docker CI](https://github.com/larsgerber/maintenance-page/actions/workflows/docker.yml/badge.svg)](https://github.com/larsgerber/maintenance-page/actions/workflows/docker.yml)
+
 # Maintenance microservice / server
 
 Standalone server, serving static file based folder containing a default message that the site is under maintenance.
