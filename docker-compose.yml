@@ -6,7 +6,7 @@ services:
     container_name: maintenance-server_default
     restart: always
     ports:
-      - 9000:80
+      - 6000:80
     environment:
         SERVER_PORT: :80
     volumes:
@@ -16,7 +16,7 @@ services:
     container_name: maintenance-server_swissgamingclan
     restart: always
     ports:
-      - 9001:80
+      - 6001:80
     environment:
         SERVER_PORT: :80
     volumes:
